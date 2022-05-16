@@ -14,6 +14,7 @@
     - no infinitivo (buscar, listar, filtrar...)
 
 # Branchs
+    -  ** git pull --all / git fetch --all   -> atualiza todas as branchs locais a partir do repo remoto **
     - master (não mexer)
     - develop
     - nomear a partir do trabalho realizado no momento
