@@ -5,11 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/login.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header id="header-container">
+        <h1>Kenzie</h1>
+        <h2>Food</h2>
+    </header>
+    <form id="login-container">
+        <label for="email">Email</label>
+        <input name="email" id="email" type="text" placeholder="Email">
+        <label for="">Senha</label>
+        <input name="senha" id="senha" type="password" placeholder="Senha">
+        <button id="botao-login">Login</button>
+        <button id="botao-anonimo">Entrar como Anônimo</button>
+        <a href="" id="botao-cadastro">Não está cadastrado? Clique e cadastre-se.</a>
+    </form>
 
-    <script src="./HTMLlinkJS/index.js"></script>
+    <script type="module" src="./HTMLlinkJS/index.js"></script>
+    <script type="module" src="controller/login.js"></script>
 </body>
 </html>
