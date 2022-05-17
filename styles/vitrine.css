@@ -1,0 +1,239 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #212529;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-left: 3vh;
+    margin-bottom: 1vw;
+}
+
+.logo-empresa{
+    display: flex;
+    margin-top: 2vh;
+    margin-left: 5vw;
+    margin-bottom: 2vh;
+}
+
+.logo-empresa h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21.6949px;
+    line-height: 33px;
+    margin-right: 2vw;
+}
+
+.logo-empresa p{
+    color: #FF2253;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.2712px;
+    line-height: 24px;
+    margin-top: 1.6vw;
+}
+
+.pesquisar{
+    border: 1.5px solid #E9ECEF;
+    border-radius: 12px;
+    background: #E9ECEF;
+    width: 90vw;
+    height: 30px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.input-pesquisa{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    background-color: #E9ECEF;
+}
+
+.container-tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+}
+
+.tag-todos{
+    border: 1.5px solid #FF2253;
+    border-radius: 30px;
+    background: #FF2253;
+    width: 88px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #F8F9FA;
+}
+
+.tag-panificadora{
+    border: 1.5px solid #FFF7F4;
+    border-radius: 32px;
+    background: #FFF7F4;
+    width: 170px;
+    height: 48px;
+    color: #212529;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    width: 96px;
+    height: 19px;
+}
+
+.tag-frutas{
+    border: 1.5px solid #FFF1F4;
+    border-radius: 32px;
+    background: #FFF1F4;
+    width: 123px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    width: 49px;
+    height: 19px;
+    color: #212529;
+    width: 49px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.tag-bebidas{
+    border: 1.5px solid #F3EEF5;
+    border-radius: 32px;
+    background: #F3EEF5;
+    width: 136px;
+    height: 48px;
+    color: #212529;
+    width: 62px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.vitrine{
+    display: flex;
+}
+
+.container-produtos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 5vw;
+}
+
+.img-produto{
+    border: 3px solid #FFE9EE;
+    border-radius: 8px;
+}
+
+.card-produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130vw;
+
+}
+
+.card-produto h2{
+    color: #000000;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    width: 266px;
+    height: 27px;
+}
+
+.descricao-produto{
+    color: #868E96;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.categoria-produto{
+    display: flex;
+}
+
+.categoria-produto p{
+    color: #868E96;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    width: 84px;
+    height: 16px;
+}
+
+.valor-carrinho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+
+.simbolo-moeda, .valor-produto{
+    color: #212529;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
