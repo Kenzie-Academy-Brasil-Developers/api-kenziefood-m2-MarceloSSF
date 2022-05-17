@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/vitrine.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Kenzie Food</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-empresa">
+            <h1>Kenzie</h1>
+            <p>Food</p>
+        </div>
+        <div class="pesquisar">
+            <img class="botao-pesquisar" src="./img/searchpesquisar.svg" id="botaoPesquisar" alt="Botão Pesquisar">
+            <input class="input-pesquisa" size="20" placeholder="Pesquisar por produto" type="text" name="pesquisar" id="pesquisar">
+        </div>
+    </header>
+    <nav id="tags" class="nav">
+        <ul class="container-tags">
+
+            <li id="tagTodos" class="tag-todos active">
+                <button class="button-todos active">Todos</button>
+            </li>
+
+            <li id="tagPanificadora" class="tag-panificadora">
+                <button class="button-panificadora"><img src="./img/Icon_breadpaoIcone.svg" alt="Panificadora">Panificadora</button>
+            </li>   
+
+            <li id="tagFrutas" class="tag-frutas">
+                <button class="button-frutas"><img src="./img/Icon_fruitsfrutasIcone.svg" alt="Frutas">Frutas</button>
+            </li>
+
+            <li id="tagBebidas" class="tag-bebidas">
+                <button class="button-bebidas"><img src="./img/Icon_glass of winevinhoIcone.svg" alt="Bebidas">Bebidas</button>
+            </li>
+
+        </ul>
+    </nav>
+    <main>
+        <!-- Produtos coletados dinamicamente -->
+        <section id="vitrine" class="vitrine">
+            <ul class="container-produtos">
+                <!-- <li id="produto" class="card-produto">
+                    <img class="img-produto" src="./img/Frame 5panquecessasdfa.svg" alt="Panquecas">
+                    <h2>Panqueca de banana com aveia </h2>
+                    <p class="descricao-produto">Esta receita serve muito bem 2 pessoas, deixa a gente bem satisfeito, se não tiver outra opção de café. Se tiver mais comida, como pães e frutas.</p>
+                    <div id="categorias" class="categoria-produto">
+                        <p>Panificadora</p>
+                        <p>Frutas</p>
+                    </div>
+                    <div class="valor-carrinho">
+                        <p class="simbolo-moeda">R$ <span class="valor-produto">20,00</span></p>
+                        <img id="adicionarCarrinho" src="./img/Button CirclebotaoCarrinho.svg" alt="Adicionar ao carrinho">
+                    </div>                    
+                </li>
+
+                <li id="produto" class="card-produto">
+                    <img class="img-produto" src="./img/unsplash_lK1Q5RyD6tcmorangos.svg" alt="Panquecas">
+                    <h2>Mousse de morango com a fruta</h2>
+                    <p class="descricao-produto">Sobremesa fácil, rápida e muito saborosa: a mousse de morango leva apenas 5 ingredientes; confira como fazer a receita.</p>
+                    <div id="categorias" class="categoria-produto">
+                        <p>Frutas</p>                       
+                    </div>
+                    <div class="valor-carrinho">
+                        <p class="simbolo-moeda">R$ <span class="valor-produto">27,50</span></p>
+                        <img id="adicionarCarrinho" src="./img/Button CirclebotaoCarrinho.svg" alt="Adicionar ao carrinho">
+                    </div>                    
+                </li>
+
+                <li id="produto" class="card-produto">
+                    <img class="img-produto" src="./img/unsplash_lK1Q5RyD6tcpastel.svg" alt="Pastéis">
+                    <h2>Pastel de verduras vegano</h2>
+                    <p class="descricao-produto">Todos nós fervemos vegetais, salteamos ou consumimos crus. Mas que tal comer vegetais como se fossem um bolo?</p>
+                    <div id="categorias" class="categoria-produto">
+                        <p>Panificadora</p>                       
+                    </div>
+                    <div class="valor-carrinho">
+                        <p class="simbolo-moeda">R$ <span class="valor-produto">20,00</span></p>
+                        <img id="adicionarCarrinho" src="./img/Button CirclebotaoCarrinho.svg" alt="Adicionar ao carrinho">
+                    </div>                    
+                </li>
+
+                <li id="produto" class="card-produto">
+                    <img class="img-produto" src="./img/unsplash_Ae7jQFDTPk4pizza.svg" alt="Pizza">
+                    <h2>Pizza vegetariana de palmito</h2>
+                    <p class="descricao-produto">Esse é um dos sabores de pizza mais pedidos por quem não come carne</p>
+                    <div id="categorias" class="categoria-produto">
+                        <p>Panificadora</p>                       
+                    </div>
+                    <div class="valor-carrinho">
+                        <p class="simbolo-moeda">R$ <span class="valor-produto">20,00</span></p>
+                        <img id="adicionarCarrinho" src="./img/Button CirclebotaoCarrinho.svg" alt="Adicionar ao carrinho">
+                    </div>                    
+                </li>
+
+                <li id="produto" class="card-produto">
+                    <img class="img-produto" src="./img/unsplash_cJdwPzls6kgvinhosuave.svg" alt="Vinho">
+                    <h2>Pizza vegetariana de palmito</h2>
+                    <p class="descricao-produto">Esse é um dos sabores de pizza mais pedidos por quem não come carne</p>
+                    <div id="categorias" class="categoria-produto">
+                        <p>Bebidas</p>                       
+                    </div>
+                    <div class="valor-carrinho">
+                        <p class="simbolo-moeda">R$ <span class="valor-produto">20,00</span></p>
+                        <img id="adicionarCarrinho" src="./img/Button CirclebotaoCarrinho.svg" alt="Adicionar ao carrinho">
+                    </div>                    
+                </li>
+
+                <li id="produto" class="card-produto">
+                    <img class="img-produto" src="./img/unsplash_ISX_imp8t1olaranjapera.svg" alt="Vinho">
+                    <h2>Laranja Pera Fresca Kenzie 5kg</h2>
+                    <p class="descricao-produto">Bastante popular no Brasil, a laranja é uma das maiores representantes das frutas cítricas. Seu sabor costuma ser doce ou levemente ácido</p>
+                    <div id="categorias" class="categoria-produto">
+                        <p>Fritas</p>
+                        <p>Bebidas</p>                       
+                    </div>
+                    <div class="valor-carrinho">
+                        <p class="simbolo-moeda">R$ <span class="valor-produto">20,00</span></p>
+                        <img id="adicionarCarrinho" src="./img/Button CirclebotaoCarrinho.svg" alt="Adicionar ao carrinho">
+                    </div>                    
+                </li> -->
+
+                <!-- Fim do DOM -->
+
+            </ul>
+        </section>
+    </main>
+
+    
+
+    <script type="module" src="../HTMLlinkJS/vitrine.js"></script>
+</body>
+</html>
