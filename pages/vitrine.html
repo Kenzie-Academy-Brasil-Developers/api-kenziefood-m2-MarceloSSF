@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <title>Kenzie Food</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Kenzie</h1>
+            <p>Food</p>
+        </div>
+        <div>
+            <img src="./pages/img/searchpesquisar.svg" id="botaoPesquisar" alt="Botão Pesquisar">
+            <input type="text" name="pesquisar" id="pesquisar">
+        </div>
+    </header>
+    <section id="botoes">
+        <div id="botaoTodos">
+            <p>Todos</p>
+        </div>
+        <div id="botaoPanificadora">
+            <img src="./pages/img/Icon_breadpaoIcone.svg" alt="Pães">
+            <p>Panificadora</p>
+        </div>
+        <div id="botaoFrutas">
+            <img src="./pages/img/Icon_fruitsfrutasIcone.svg" alt="Frutas">
+            <p>Frutas</p>
+        </div>
+        <div id="botaoBebidas">
+            <img src="./pages/img/Icon_glass of winevinhoIcone.svg" alt="Bebidas">
+            <p>Bebidas</p>
+        </div>
+    </section>
+    <main>
+        <!-- Produtos coletados dinamicamente -->
+        <section id="vitrine">
+            <ul>
+                <li>
+                    <img src="./pages/img/Frame 5panqueca.svg" alt="Panquecas">
+                    <h2>Panqueca de banana com aveia </h2>
+                    <p>Esta receita serve muito bem 2 pessoas, deixa a gente bem satisfeito, se não tiver outra opção de café. Se tiver mais comida, como pães e frutas.</p>
+                    <div id="categorias">
+                        <p>Panificadora</p>
+                        <p>Frutas</p>
+                    </div>
+                    <div>
+                        <p>R$ <span>20,00</span></p>
+                        <img id="adicionarCarrinho" src="./pages/img/Button CirclebotaoCarrinho.svg" alt="Adicionar ao carrinho">
+                    </div>                    
+                </li>
+
+                <li>
+                    <img src="./pages/img/unsplash_lK1Q5RyD6tcmorangos.svg" alt="Panquecas">
+                    <h2>Mousse de morango com a fruta</h2>
+                    <p>Sobremesa fácil, rápida e muito saborosa: a mousse de morango leva apenas 5 ingredientes; confira como fazer a receita.</p>
+                    <div id="categorias">
+                        <p>Frutas</p>                       
+                    </div>
+                    <div>
+                        <p>R$ <span>27,50</span></p>
+                        <img id="adicionarCarrinho" src="./pages/img/Button CirclebotaoCarrinho.svg" alt="Adicionar ao carrinho">
+                    </div>                    
+                </li>
+
+            </ul>
+        </section>
+    </main>
+
+    
+
+    <script src="./HTMLlinkJS/index.js"></script>
+</body>
+</html>
