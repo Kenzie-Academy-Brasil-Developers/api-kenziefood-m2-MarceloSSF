@@ -42,8 +42,13 @@ export class CadastroUsuario {
         labelEmail.innerText    = 'E-mail';
         inputEmail.placeholder  = 'E-mail';
         labelSenha.innerText    = 'Senha';
+        inputSenha.placeholder  = 'Senha';
         btnCadastro.innerText   = 'Cadastrar';
         
+        inputNome.type  = 'text';
+        inputEmail.type = 'email';
+        inputSenha.type = 'password';
+
         formNome.append(labelNome, inputNome);
         formEmail.append(labelEmail, inputEmail);
         formSenha.append(labelSenha, inputSenha);
