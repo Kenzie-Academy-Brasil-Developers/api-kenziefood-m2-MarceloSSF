@@ -39,7 +39,7 @@ export class Api {
 
     static async autenticarUsuario(data) {
 
-        const URLAUTENTICAR = 'https://api-kenzie-food.herokuapp.com/auth/auth/login'
+        const URLAUTENTICAR = 'https://api-kenzie-food.herokuapp.com/auth/login'
         const token = await fetch(URLAUTENTICAR, {
             method: 'POST',
             headers: {
