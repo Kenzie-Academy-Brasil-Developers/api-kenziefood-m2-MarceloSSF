@@ -67,6 +67,8 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    overflow: auto;
+    scrollbar-width: none;
 }
 
 .button-todos{

@@ -24,10 +24,10 @@ body {
 }
 
 .titulo{
-    color: #FF2253;
+    color: #212529;
     font-weight: 700;
     font-size: 8vw;
-    margin-bottom: 3vw;
+    margin-bottom: 7vw;
 }
 
 .formularioCadastro {
@@ -39,7 +39,7 @@ body {
     justify-content: center;
     align-items: center;
     
-    border-radius: 60px;
+    border-radius: 75px;
 }
 
 .form {
@@ -52,28 +52,27 @@ body {
 label {
     color: #212529;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 input {
-    background-color: #DEE2E6;
+    background-color: #FFF7F4;
     height: 5vh;
     width: 65vw;
     border: 1.5px solid #DEE2E6;
-    border-radius: 12px;
-    padding: 0.5vh 2vw 0.5vh 2vw;
+    border-radius: 75px;
 }
 
 .btnNovoCadastro {
-    width: 50vw;
+    width: 25vw;
 
-    background-color: #DEE2E6;
+    background-color: #FFF1F4;
     padding: 2vh 2vw;
-    border: 2px solid black;
-    border-radius: 32px;
+    border-style: none;
+    border-radius: 75px;
 
     color: black;
-    font-weight: 500;
+    font-weight: 900;
 }
 
 #msgRetorno {
@@ -84,7 +83,17 @@ input {
     text-align: center;
 }
 
-@media only screen and (min-width: 1410px) {
+.btnVoltar {
+    margin-left: -90vw;
+    width: 5vw;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FF2253;
+    color: #212529;
+    border-radius: 32px;
+}
+
+@media only screen and (min-width: 1024px) {
     
     body {
         width: 100vw;
@@ -100,7 +109,7 @@ input {
 
     .titulo {
         font-size: 2.5vw;
-        margin-bottom: 1vw;
+        margin-bottom: 4vw;
     }
 
     .formularioCadastro {
