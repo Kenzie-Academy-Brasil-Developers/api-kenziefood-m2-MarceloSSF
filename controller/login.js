@@ -10,7 +10,6 @@ botaoLogin.addEventListener("click", async (event)=>{
         "password": senha
     }
 
-    console.log(await Api.autenticarUsuario(body))
 }
 )
 
