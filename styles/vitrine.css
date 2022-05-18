@@ -1,7 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     color: #212529;
-    min-height: 300px;
+    max-height: 300px;
 }
 
 .header{
@@ -426,6 +426,49 @@ body{
         margin-right: 15px;
         margin-bottom: 20px;
     }
+
+}
+
+@media screen and (min-width: 1280px){
+    
+    .header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+        margin-left: 15px;
+        margin-right: 60px;
+    }
+
+    .logo-empresa h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 21.6949px;
+        line-height: 33px;
+        margin-right: 1vw;
+    }
+
+    .container-tags {
+        margin-top: -15px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 25px;
+    }
+
+    .container-produtos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 974px;
+        justify-content: flex-start;
+        margin-left: 60px;
+        height: auto;
+    }
+
+
+    
 
 }
 
