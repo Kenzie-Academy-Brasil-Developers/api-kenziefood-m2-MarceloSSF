@@ -68,6 +68,7 @@ body{
     flex-wrap: nowrap;
     align-items: center;
     overflow: auto;
+    scrollbar-width: none;
 }
 
 .button-todos{
@@ -135,6 +136,7 @@ body{
 .vitrine{
     display: flex;
     overflow: auto;
+    scrollbar-width: none;
 }
 
 .container-produtos{
