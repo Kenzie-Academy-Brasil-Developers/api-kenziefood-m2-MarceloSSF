@@ -145,3 +145,143 @@ button:hover {
     cursor: pointer;
     background-color: #a5a6a8;
 }
+
+@media screen and (min-width: 360px){
+    .btnVoltar {
+        margin-left: -297px;
+        width: 54px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #FF2253;
+        color: #212529;
+        border-radius: 32px;
+    }
+}
+
+@media screen and (min-width: 640px){
+    .btnVoltar {
+        margin-left: -576px;
+        width: 54px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #FF2253;
+        color: #212529;
+       
+    }
+
+    .titulo {
+        color: #212529;
+        font-weight: 700;
+        font-size: 5vw;
+        margin-top: -44px;
+        margin-bottom: 0px;
+    }
+
+    .formularioCadastro {
+        background-color: #FF2253;
+        width: 408px;
+        height: 294px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 28px;
+    }
+
+    input {
+        background-color: #FFF7F4;
+        height: 27px;
+        width: 276px;
+        border: 1.5px solid #DEE2E6;
+        border-radius: 75px;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .btnVoltar {
+        margin-left: -665px;
+        width: 65px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #FF2253;
+        color: #212529;
+    }
+
+    .titulo {
+        color: #212529;
+        font-weight: 700;
+        font-size: 9vw;
+        margin-top: -191px;
+        margin-bottom: 71px;
+    }
+
+    .formularioCadastro {
+        background-color: #FF2253;
+        width: 607px;
+        height: 445px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 28px;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .btnVoltar {
+        margin-left: -903px;
+        width: 65px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #FF2253;
+        color: #212529;
+    }
+
+    .formularioCadastro {
+        background-color: #FF2253;
+        width: 482px;
+        height: 445px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 28px;
+    }
+
+    input {
+        background-color: #FFF7F4;
+        height: 37px;
+        width: 276px;
+        border: 1.5px solid #DEE2E6;
+        border-radius: 75px;
+    }
+
+    .btnNovoCadastro {
+        width: 16vw;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1366px){
+    .titulo {
+        color: #212529;
+        font-weight: 700;
+        font-size: 9vw;
+        margin-top: -42px;
+        margin-bottom: -13px;
+    }
+
+    .btnVoltar {
+        margin-left: -1252px;
+        width: 65px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #FF2253;
+        color: #212529;
+    }
+
+    
+}

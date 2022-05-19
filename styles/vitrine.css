@@ -4,6 +4,8 @@ body{
     max-height: 300px;
 }
 
+
+
 .header{
     display: flex;
     flex-direction: row;
@@ -254,6 +256,13 @@ body{
     margin-right: 15px;
 }
 
+a {
+    cursor: pointer;
+    color: #DEE2E6;
+    margin-top: -1px;
+    font-size: 11px;
+}
+
 @media screen and (min-width: 640px) {
     .header {
         display: flex;
@@ -316,59 +325,6 @@ body{
 }
 
 
-@media screen and (min-width: 1024px){
-
-    .header{
-        
-        display: flex;
-        justify-content: space-between;
-        margin-top: -5px;
-        margin-left: 15px;
-        margin-right: 15px;
-       
-    }
-    
-    .logo-empresa {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: baseline;
-        margin-left: 30px;
-        margin-bottom: 20px;
-    }
-
-    .pesquisar {
-        margin-top: 18px;
-    }
-
-    .container-tags {
-        margin-top: -25px;
-        margin-bottom: 15px;
-    }
-
-    .container-produtos{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 660px;
-        justify-content: flex-start;
-        margin-left: 20px;
-    }
-
-    .botao-carrinho-compras{
-        display: none;
-    }
-
-    .card-produto {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 303px;
-        height: 397px;
-        margin-right: 15px;
-        margin-bottom: 20px;
-    }
-}
 
 @media screen and (min-width: 768px){
 
@@ -429,7 +385,61 @@ body{
 
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1024px){
+
+    .header{
+        
+        display: flex;
+        justify-content: space-between;
+        margin-top: -5px;
+        margin-left: 15px;
+        margin-right: 15px;
+       
+    }
+    
+    .logo-empresa {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    .pesquisar {
+        margin-top: 18px;
+    }
+
+    .container-tags {
+        margin-top: -25px;
+        margin-bottom: 15px;
+    }
+
+    .container-produtos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 660px;
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    .botao-carrinho-compras{
+        display: none;
+    }
+
+    .card-produto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 303px;
+        height: 397px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1366px){
     
     .header{
         display: flex;
@@ -439,6 +449,33 @@ body{
         margin-left: 15px;
         margin-right: 60px;
     }
+
+    #login-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #ff2253;
+        width: 557px;
+        height: 452px;
+        margin: auto;
+        border-radius: 75px;
+        box-shadow: 5px 5px 5px 5px #dee2e6;
+        gap: 5px;
+        align-items: center;
+    }
+    
+    input {
+        font-family: Poppins, sans-serif;
+        background-color: #FFF7F4;
+        height: 40px;
+        width: 346px;
+        border-radius: 75px;
+        border-style: none;
+        font-size: 15px;
+        margin-top: 3px;
+    }
+
+
 
     .logo-empresa h1 {
         font-family: 'Poppins';
@@ -465,6 +502,23 @@ body{
         justify-content: flex-start;
         margin-left: 60px;
         height: auto;
+    }
+
+    button {
+        background-color: #FFF1F4;
+        font-family: Poppins, sans-serif;
+        height: 40px;
+        width: 200px;
+        border-radius: 75px;
+        border-style: none;
+        font-size: 13px;
+    }
+
+    a {
+        cursor: pointer;
+        color: #DEE2E6;
+        margin-top: -1px;
+        font-size: 11px;
     }
 }
 
