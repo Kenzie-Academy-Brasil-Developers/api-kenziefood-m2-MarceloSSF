@@ -43,3 +43,10 @@ bebidas.addEventListener('click', async () => {
     const listaFiltrada = await Filtros.filtro('Bebidas');
     criarVitrine(listaFiltrada);
 })
+
+inputBusca.addEventListener('input', async () => {
+    ul.innerHTML = '';
+    const inputValor = inputBusca.value;
+    const listaFiltrada = await Filtros.buscarProduto(inputValor);
+    criarVitrine(listaFiltrada);
+})   
