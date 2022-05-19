@@ -1,0 +1,291 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #E9ECEF;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+#cadastro-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #ff2253;
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    margin-top: 1vh;
+    border-radius: 75px;
+    box-shadow: 5px 5px 5px 5px #DEE2E6;
+    align-items: center;
+    gap: 5px;
+}
+
+#header-container{
+    display: flex;
+    font-family: Poppins, sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+h1{
+    color: #212529;
+    font-weight: 700;
+    font-size: 8vw;
+}
+
+h2{
+    color: #FF2253;
+    font-weight: 700;
+    font-size: 5vw;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.form {
+    margin-bottom: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label{
+    color: #212529;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+input, textarea{
+    font-family: Poppins, sans-serif;
+    background-color: #FFF7F4;
+    height: 3vh;
+    width: 65vw;
+    border-radius: 75px;
+    border-style: none;
+    font-size: 15px;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+textarea {
+    text-align:center;
+}
+
+button{
+    background-color: #FFF1F4;
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
+    height: 6vh;
+    width: 25vw;
+    border-radius: 75px;
+    border-style: none;
+}
+
+.btnVoltar {
+    width: 10vw;
+    margin-top: 5vw;
+    margin-right: 70vw;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FF2253;
+    color: #212529;
+    border-radius: 32px;
+}
+
+.cardsCriados {
+    width: 100vw;
+    height: 60vh;
+    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul {
+    margin-right: 5vw;
+    margin-top: 1.5vh;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    margin: auto;
+    margin-bottom: 1vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+} 
+
+li img {
+    width: 80px;
+    height: 80px;
+}
+
+.infoItem {
+    margin-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
+}
+
+.infoItem textarea {
+    width: 50vw;
+    height: 3vh;
+    overflow: auto;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.botoes button {
+    width: 15vw;
+}
+
+.editar {
+    background-color: blue;
+}
+
+.excluir {
+    background-color: red;
+}
+
+.salvar {
+    background-color: green;
+}
+
+.noEdit {
+    pointer-events: none;
+}
+
+.edit {
+    pointer-events: visible;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+#pText {
+    width: 40px;
+    height: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    body {
+        width: 100vw;
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    main {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 150px;
+    }
+
+    #header-container{
+        align-items: baseline;
+        margin-top: -5vh;
+        margin-left: 40vw;
+    }
+
+    h1 {
+        font-size: 2.5vw;
+        margin-bottom: 1vw;
+    }
+
+    h2 {
+        font-size: 1.5vw;
+    }
+
+    #cadastro-container {
+        background-color: #FF2253;
+        height: 60vh;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .form {
+        margin-bottom: 1vw;
+        gap: 5px;
+    }
+
+    input, textarea {
+        height: 2vw;
+        width: 20vw;
+        border: 1.5px solid #DEE2E6;
+        border-radius: 12px;
+        padding: 0.1vh 0.5vw 0vh 0.5vw;
+    }
+
+    li {
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .infoItem textarea {
+        width: 40vw;
+        height: 10vh;
+    }
+    
+    #pText {
+        width: 90px;
+        height: 20px;
+    }
+
+    .botoes button {
+        width: 5vw;
+    }
+
+    button {
+        width: 10vw;
+    }
+
+    .btnVoltar {
+        margin-left: 5vw;
+        margin-top: 10vh;
+        width: 5vw;
+        text-align: center;
+        text-decoration: none;
+        background-color: #FF2253;
+        color: #212529;
+        border-radius: 32px;
+    }
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #a5a6a8;
+}

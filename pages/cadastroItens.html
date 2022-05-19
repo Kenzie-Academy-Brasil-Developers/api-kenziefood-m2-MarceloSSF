@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/cadastroItens.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="./vitrine.html" class="btnVoltar">Voltar</a>
+    <header id="header-container">
+        <h1>Kenzie</h1>
+        <h2>Food</h2>
+    </header>
+    <main>
+    <form id="cadastro-container">
+        <div class="form">
+            <label for="nome">Nome</label>
+            <input name="Nome" id="nome" type="text" placeholder="Nome">
+        </div>
+        <div class="form">
+            <label for="">Preço</label>
+            <input name="preco" id="preco" type="number" placeholder="Preço">
+        </div>   
+        <div class="form">
+            <label for="">Categoria</label>
+            <input name="categoria" id="categoria" type="text" placeholder="Categoria">
+        </div>
+        <div class="form">
+            <label for="">Imagem</label>
+            <input name="imagem" id="imagem" type="text" placeholder="Imagem">
+        </div>
+        <div class="form">
+            <label for="">Descrição</label>
+            <textarea name="descricao" id="descricao" type="text" placeholder="Descrição"></textarea>
+        </div> 
+        <button id="botao-cadastroItem">Cadastrar</button>
+        <span id="msgRetorno"></span>
+    </form>
+    
+    <ul class="cardsCriados" id="cardsCriados">
+        <li>
+            <img src="https://github.com/wence-.png" alt="">
+            <div class="infoItem">
+                <p>Nome: 
+                    <textarea id="pText" class="noEdit"></textarea>
+                </p>
+                <p>Preço: 
+                    <textarea id="pText" class="noEdit"></textarea>
+                </p>
+                <p>Categoria: 
+                    <textarea id="pText" class="noEdit"></textarea>
+                </p>
+                <textarea class="noEdit">Descrição</textarea>
+            </div> 
+            <div class= "botoes"> 
+                <button class="editar">Editar</button>
+                <button class="excluir">Excluir</button>
+                <button class="salvar">Salvar</button>
+            </div>
+        </li>
+    </ul>
+    </main>
+    <script type="module" src="../controller/cadastroItens.js"></script>
+</body>
+</html>

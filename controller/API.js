@@ -57,14 +57,15 @@ export class Api {
             return token;
     }
 
-    static async buscarItensCarrinho() {
+    static async buscarItensCriados(token) {
 
-        const URLPEGARCART = 'https://api-kenzie-food.herokuapp.com/cart';
+        const URLPEGARCART = 'https://api-kenzie-food.herokuapp.com/my/products';
 
         const response = await fetch(URLPEGARCART, {
             method: 'GET',
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${token}`
             }
         })
             .then(res => res.json())
@@ -74,12 +75,13 @@ export class Api {
         return response;
     }
 
-    static async colocarItemCarrinho(data) {
-        const URLADDITEMCARRINHO = 'https://api-kenzie-food.herokuapp.com/cart/add';
-        const response = await fetch(URLCRIARUSUARIO, {
+    static async criarItens(data, token) {
+        const URLCRIARITEM = 'https://api-kenzie-food.herokuapp.com/my/products';
+        const response = await fetch(URLCRIARITEM, {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
+                "Authorization": `Bearer ${token}`
             },
             body: JSON.stringify(data)
         })
@@ -90,13 +92,31 @@ export class Api {
         return response;
     }
 
-    static async deletarItemCarrinho(id) {
-        const URLDELETARCARRINHO = `https://api-kenzie-food.herokuapp.com/cart/remove/:${product_id}`;
+    static async editarItensCriados(data, id, token) {
+        const URLEDITARITEM = `https://api-kenzie-food.herokuapp.com/my/products/${id}`;
+        const response = await fetch(URLEDITARITEM, {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${token}`
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(res => res)
+            .catch(error => error)
+
+        return response;
+    }
+
+    static async deletarItensCriados(id, token) {
+        const URLDELETARCARRINHO = `https://api-kenzie-food.herokuapp.com/my/products/${id}`;
 
         const response = await fetch(URLDELETARCARRINHO, {
             method: 'DELETE',
             headers: {
                 "Content-Type": "application/json",
+                "Authorization": `Bearer ${token}`
             },
         })
             .then(res => res.json())
