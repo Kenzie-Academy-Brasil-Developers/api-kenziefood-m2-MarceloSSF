@@ -2,6 +2,7 @@ import { Api } from "./API.js";
 
 const token = window.localStorage.getItem('Token');
 const cardsUsuario = await Api.buscarItensCriados(token);
+let confirmaDelete;
 const btnCadastro = document.getElementById('botao-cadastroItem');
 
 const inputNome         = document.getElementById('nome');
@@ -9,6 +10,7 @@ const inputPreco        = document.getElementById('preco');
 const inputCategoria    = document.getElementById('categoria');
 const inputImagem       = document.getElementById('imagem');
 const inputDescricao    = document.getElementById('descricao');
+const modal = document.querySelector('.modal');
 
 btnCadastro.addEventListener('click', async function(event) {
     event.preventDefault();
@@ -116,8 +118,7 @@ function mostrarLista(arrayCards) {
                 btnSalvar.style.visibility = 'hidden';
 
                 const idItem = arrayCards[i].id;
-                await Api.deletarItensCriados(idItem, token);
-                mostrarLista(await Api.buscarItensCriados(token));
+                await switchModal(idItem);
             })
             
             btnEditar.innerText = 'Editar';
@@ -134,6 +135,52 @@ function mostrarLista(arrayCards) {
     
             listaCards.appendChild(li);
         }
+    }
+}
+
+async function switchModal(idItem){
+    
+    const estiloAtual = modal.style.display;
+    const contentModal = document.querySelector('.content');
+    const divBotoes = document.createElement('div');
+    const buttonConfirma = document.createElement('button');
+    const buttonCancela = document.createElement('button');
+
+    divBotoes.classList.add('divBotoes');
+    buttonConfirma.id = 'btnConfirma';
+    buttonCancela.id  = 'btnCancela';
+
+    buttonConfirma.style.backgroundColor = 'green';
+    buttonCancela.style.backgroundColor  = 'red';
+
+    contentModal.innerText = 'Você tem certeza que quer excluir esse item?';
+    buttonConfirma.innerText = 'Sim';
+    buttonCancela.innerText = 'Não';
+
+    divBotoes.append(buttonConfirma, buttonCancela)
+    contentModal.append(divBotoes)
+
+    buttonConfirma.addEventListener('click', async function(event) {
+        await Api.deletarItensCriados(idItem, token);
+        mostrarLista(await Api.buscarItensCriados(token));
+    })
+
+    modal.appendChild(contentModal)
+    if(estiloAtual === 'block') {
+        modal.style.display ='none';
+
+    } else {
+        modal.style.display = 'block';
+    }
+} 
+
+window.onclick = async function(event) {
+
+    const btnConfirma = document.getElementById('btnConfirma');
+    const btnCancela = document.getElementById('btnCancela')
+
+    if(event.target == modal || event.target == btnConfirma || event.target == btnCancela) {
+        switchModal();
     }
 }
 mostrarLista(cardsUsuario)
