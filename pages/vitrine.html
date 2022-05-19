@@ -28,58 +28,38 @@
     <nav id="tags" class="nav">
         <ul class="container-tags">
 
-            <li id="tagTodos" class="tag-todos active">
+            <li id="tagTodos" class="tag-todos">
                 <button class="button-todos active">Todos</button>
             </li>
-
+           
             <li id="tagPanificadora" class="tag-panificadora">
-                <button class="button-panificadora"><img src="./img/Icon_breadpaoIcone.svg" alt="Panificadora">Panificadora</button>
+                <button class="button-panificadora desactive-panificadora"><img src="./img/Icon_breadpaoIcone.svg" alt="Panificadora">Panificadora</button>
             </li>   
 
             <li id="tagFrutas" class="tag-frutas">
-                <button class="button-frutas"><img src="./img/Icon_fruitsfrutasIcone.svg" alt="Frutas">Frutas</button>
+                <button class="button-frutas desactive-frutas"><img src="./img/Icon_fruitsfrutasIcone.svg" alt="Frutas">Frutas</button>
             </li>
 
             <li id="tagBebidas" class="tag-bebidas">
-                <button class="button-bebidas"><img src="./img/Icon_glass of winevinhoIcone.svg" alt="Bebidas">Bebidas</button>
-            </li>
+                <button class="button-bebidas desactive-bebidas"><img src="./img/Icon_glass of winevinhoIcone.svg" alt="Bebidas">Bebidas</button>
 
         </ul>
     </nav>
     <main>
-        <!-- Produtos coletados dinamicamente -->
         <section id="vitrine" class="vitrine">
             <ul class="container-produtos">
 
-                <!-- <li id="produto" class="card-produto">
-                    <img class="img-produto" src="./img/Frame 5panquecessasdfa.svg" alt="Panquecas">
-                    <h2>Panqueca de banana com aveia </h2>
-                    <p class="descricao-produto">Esta receita serve muito bem 2 pessoas, deixa a gente bem satisfeito, se não tiver outra opção de café. Se tiver mais comida, como pães e frutas.</p>
-                    <div id="categorias" class="categoria-produto">
-                        <p>Panificadora</p>
-                        <p>Frutas</p>
-                    </div>
-                    <div class="valor-carrinho">
-                        <p class="simbolo-moeda">R$ <span class="valor-produto">20,00</span></p>
-                        <img id="adicionarCarrinho" src="./img/Button CirclebotaoCarrinho.svg" alt="Adicionar ao carrinho">
-                    </div>                    
-                </li>
-
-               <!- Fim dos produtos coletados dinamicamente -->
-
-            </ul>
+            </ul>   
         </section>
-
-        <!-- Botao Carrinho de Compras -->
-
-        <button class="botao-carrinho-compras" id="botaoCarrinhoCompras"><img class='img-botao-carrinho'src="./img/carrinho.svg" alt="Carrinho de compras">Carrinho</button>
-        
-        <!-- Fim Botão Carrinho de compras -->
+            <div class="cart--button--mobile">
+                <img src="./img/cart.png" alt="">
+                <span>Carrinho</span>
+            </div>
         
     </main>
 
-    
 
     <script type="module" src="../HTMLlinkJS/vitrine.js"></script>
+    <script type="module" src="../HTMLlinkJS/carrinho.js"></script>
 </body>
 </html>

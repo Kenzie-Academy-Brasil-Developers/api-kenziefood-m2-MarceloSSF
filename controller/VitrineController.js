@@ -1,5 +1,7 @@
-export class Vitrine {
+import Carrinho from "../HTMLlinkJS/carrinho.js";
 
+export class Vitrine {
+    static arrayCarrinho = []
     static criarCards(item) {
 
         const li                = document.createElement('li');
@@ -26,6 +28,7 @@ export class Vitrine {
         simboloMoeda.classList.add('simbolo-moeda');
         valorProduto.classList.add('valor-produto');
 
+        
         imgProduto.src          = item.imagem;
         h2.innerText            = item.nome;
         descricao.innerText     = item.descricao;
@@ -33,13 +36,19 @@ export class Vitrine {
         simboloMoeda.innerText  = 'R$ ';
         valorProduto.innerText  = item.preco;
         imgAddCarrinho.src      = '../pages/img/Button CirclebotaoCarrinho.svg';
-
+        
         simboloMoeda.append(valorProduto);
         buttonAddCarrinho.append(imgAddCarrinho);
         valorCarrinho.append(simboloMoeda, buttonAddCarrinho);
-
+        
         li.append(imgProduto, h2, descricao, categorias, valorCarrinho);
-
+        
+        buttonAddCarrinho.addEventListener('click', () => {
+            this.arrayCarrinho.push(item)
+            console.log(this.arrayCarrinho)
+            localStorage.setItem('itensCarrinho', JSON.stringify(this.arrayCarrinho))
+            Carrinho.desktop()
+        })
         return li;
     }
 
