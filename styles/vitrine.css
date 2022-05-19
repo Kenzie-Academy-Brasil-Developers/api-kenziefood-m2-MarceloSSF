@@ -68,6 +68,7 @@ body{
     border: none;
     color: white;
     margin-right: 0.5rem;
+    
 }
 .cart--main {
     width: 100%;
@@ -281,6 +282,7 @@ body{
     line-height: 19px;
     text-align: center;
     cursor: pointer;
+    border: none;
 }
 
 .button-panificadora{
