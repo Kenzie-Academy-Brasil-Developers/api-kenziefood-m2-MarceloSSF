@@ -21,94 +21,95 @@ function criarVitrine(produtos) {
 }
 
 todos.addEventListener('click', async () => {
-
-    if(event.target.className == 'button-todos desactive-todos'){
-        const botaoTodos = document.getElementsByClassName('button-todos')[0]
-        const botaoPanificadora = document.getElementsByClassName('button-panificadora')[0]
-        const botaoFrutas = document.getElementsByClassName('button-frutas')[0]
-        const botaoBebidas = document.getElementsByClassName('button-bebidas')[0]
-
-        //adicionar classes desativadas
-        botaoPanificadora.classList.add('desactive-panificadora')
-        botaoFrutas.classList.add('desactive-frutas')
-        botaoBebidas.classList.add('desactive-bebidas')
-
-        //adiciona active
-        botaoTodos.classList.add('active')
-
-        //remove active dos demais
-        botaoTodos.classList.remove('desactive-todos')
-        botaoPanificadora.classList.remove('active')
-        botaoFrutas.classList.remove('active')
-        botaoBebidas.classList.remove('active')
-    }   
-        
-        ul.innerHTML = '';
-        const listaFiltrada = await Filtros.filtro('Todos');
-        criarVitrine(listaFiltrada);
+    activeDesactiveTodos()
+    ul.innerHTML = '';
+    const listaFiltrada = await Filtros.filtro('Todos');
+    criarVitrine(listaFiltrada);
 })        
 
 panificadora.addEventListener('click', async () => {
-
-    if(event.target.className == 'button-panificadora desactive-panificadora'){
-        const botaoTodos = document.getElementsByClassName('button-todos')[0]
-        const botaoPanificadora = document.getElementsByClassName('button-panificadora')[0]
-        const botaoFrutas = document.getElementsByClassName('button-frutas')[0]
-        const botaoBebidas = document.getElementsByClassName('button-bebidas')[0]
-
-        //adicionar classes desativadas
-        botaoTodos.classList.add('desactive-todos')
-        botaoFrutas.classList.add('desactive-frutas')
-        botaoBebidas.classList.add('desactive-bebidas')
-
-        //adiciona active
-        botaoPanificadora.classList.add('active')
-
-        //remove active dos demais
-        botaoPanificadora.classList.remove('desactive-panificadora')
-        botaoTodos.classList.remove('active')
-        botaoFrutas.classList.remove('active')
-        botaoBebidas.classList.remove('active')
-    }   
-
-
-    
-
+    activeDesactivePanificadora()
     ul.innerHTML = '';
     const listaFiltrada = await Filtros.filtro('Panificadora');
     criarVitrine(listaFiltrada);
 })
 
 frutas.addEventListener('click', async () => {
-
-    if(event.target.className == 'button-frutas desactive-frutas'){
-        const botaoFrutas = document.getElementsByClassName('button-frutas')[0]
-        const botaoTodos = document.getElementsByClassName('button-todos')[0]
-        const botaoPanificadora = document.getElementsByClassName('button-panificadora')[0]
-        const botaoBebidas = document.getElementsByClassName('button-bebidas')[0]
-
-        //adicionar classes desativadas
-        botaoTodos.classList.add('desactive-todos')
-        botaoPanificadora.classList.add('desactive-panificadora')
-        botaoBebidas.classList.add('desactive-bebidas')
-
-        //adiciona active
-        botaoFrutas.classList.add('active')
-
-        //remove active dos demais
-        botaoFrutas.classList.remove('desactive-frutas')
-        botaoTodos.classList.remove('active')
-        botaoPanificadora.classList.remove('active')
-        botaoBebidas.classList.remove('active')
-    }   
-
+    activeDesactiveFrutas()
     ul.innerHTML = '';
     const listaFiltrada = await Filtros.filtro('Frutas');
     criarVitrine(listaFiltrada);
 })
 
 bebidas.addEventListener('click', async () => {
+    activeDesactiveBebidas()
+    ul.innerHTML = '';
+    const listaFiltrada = await Filtros.filtro('Bebidas');
+    criarVitrine(listaFiltrada);
+})
 
+function activeDesactiveTodos(){    
+    if(event.target.className == 'button-todos desactive-todos'){
+        const botaoTodos = document.getElementsByClassName('button-todos')[0]
+        const botaoPanificadora = document.getElementsByClassName('button-panificadora')[0]
+        const botaoFrutas = document.getElementsByClassName('button-frutas')[0]
+        const botaoBebidas = document.getElementsByClassName('button-bebidas')[0]
+
+        botaoPanificadora.classList.add('desactive-panificadora')
+        botaoFrutas.classList.add('desactive-frutas')
+        botaoBebidas.classList.add('desactive-bebidas')
+
+        botaoTodos.classList.add('active')
+
+        botaoTodos.classList.remove('desactive-todos')
+        botaoPanificadora.classList.remove('active')
+        botaoFrutas.classList.remove('active')
+        botaoBebidas.classList.remove('active')
+    } 
+}
+
+function activeDesactivePanificadora(){
+    if(event.target.className == 'button-panificadora desactive-panificadora'){
+        const botaoTodos = document.getElementsByClassName('button-todos')[0]
+        const botaoPanificadora = document.getElementsByClassName('button-panificadora')[0]
+        const botaoFrutas = document.getElementsByClassName('button-frutas')[0]
+        const botaoBebidas = document.getElementsByClassName('button-bebidas')[0]
+
+        botaoTodos.classList.add('desactive-todos')
+        botaoFrutas.classList.add('desactive-frutas')
+        botaoBebidas.classList.add('desactive-bebidas')
+
+        botaoPanificadora.classList.add('active')
+
+        botaoPanificadora.classList.remove('desactive-panificadora')
+        botaoTodos.classList.remove('active')
+        botaoFrutas.classList.remove('active')
+        botaoBebidas.classList.remove('active')
+    }   
+}
+
+function activeDesactiveFrutas(){
+    if(event.target.className == 'button-frutas desactive-frutas'){
+        const botaoFrutas = document.getElementsByClassName('button-frutas')[0]
+        const botaoTodos = document.getElementsByClassName('button-todos')[0]
+        const botaoPanificadora = document.getElementsByClassName('button-panificadora')[0]
+        const botaoBebidas = document.getElementsByClassName('button-bebidas')[0]
+
+        botaoTodos.classList.add('desactive-todos')
+        botaoPanificadora.classList.add('desactive-panificadora')
+        botaoBebidas.classList.add('desactive-bebidas')
+
+        botaoFrutas.classList.add('active')
+
+        botaoFrutas.classList.remove('desactive-frutas')
+        botaoTodos.classList.remove('active')
+        botaoPanificadora.classList.remove('active')
+        botaoBebidas.classList.remove('active')
+    }   
+
+}
+
+function activeDesactiveBebidas(){
     if(event.target.className == 'button-bebidas desactive-bebidas'){
         const botaoBebidas = document.getElementsByClassName('button-bebidas')[0]
         const botaoFrutas = document.getElementsByClassName('button-frutas')[0]
@@ -116,22 +117,15 @@ bebidas.addEventListener('click', async () => {
         const botaoPanificadora = document.getElementsByClassName('button-panificadora')[0]
         
 
-        //adicionar classes desativadas
         botaoTodos.classList.add('desactive-todos')
         botaoPanificadora.classList.add('desactive-panificadora')
         botaoFrutas.classList.add('desactive-frutas')
 
-        //adiciona active
         botaoBebidas.classList.add('active')
 
-        //remove active dos demais
         botaoBebidas.classList.remove('desactive-bebidas')
         botaoFrutas.classList.remove('active')
         botaoTodos.classList.remove('active')
         botaoPanificadora.classList.remove('active')
     }   
-
-    ul.innerHTML = '';
-    const listaFiltrada = await Filtros.filtro('Bebidas');
-    criarVitrine(listaFiltrada);
-})
+}
