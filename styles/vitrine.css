@@ -62,6 +62,36 @@ body{
     background-color: #E9ECEF;
 }
 
+.active{
+    border-radius: 30px;
+    background: #FF2253;
+    color: #F8F9FA;    
+}
+
+.desactive-todos{
+    border-radius: 30px;
+    background: #FFF7F4;
+    color: #212529;
+}
+
+.desactive-panificadora{
+    border-radius: 32px;
+    background: #FFF7F4;
+    color: #212529;
+}
+
+.desactive-frutas{
+    border-radius: 32px;
+    background: #FFF1F4;
+    color: #212529;
+}
+
+.desactive-bebidas{
+    border-radius: 32px;
+    background: #F3EEF5;
+    color: #212529;
+}
+
 .container-tags{
     display: flex;
     padding: 15px 20px;
@@ -73,28 +103,22 @@ body{
     scrollbar-width: none;
 }
 
-.button-todos{
-    border: 1.5px solid #FF2253;
-    border-radius: 30px;
-    background: #FF2253;
+.button-todos {
     width: 88px;
     height: 48px;
-    color: #F8F9FA;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+
 }
 
 .button-panificadora{
     border: 1.5px solid #FFF7F4;
-    border-radius: 32px;
-    background: #FFF7F4;
     width: 170px;
     height: 48px;
-    color: #212529;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -105,11 +129,8 @@ body{
 
 .button-frutas{
     border: 1.5px solid #FFF1F4;
-    border-radius: 32px;
-    background: #FFF1F4;
     width: 123px;
     height: 48px;
-    color: #212529;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -120,11 +141,8 @@ body{
 
 .button-bebidas{
     border: 1.5px solid #F3EEF5;
-    border-radius: 32px;
-    background: #F3EEF5;
     width: 136px;
     height: 48px;
-    color: #212529;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -520,6 +538,8 @@ a {
         margin-top: -1px;
         font-size: 11px;
     }
+
+    
 }
 
 
