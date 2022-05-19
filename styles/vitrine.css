@@ -909,7 +909,7 @@ a {
         margin-left: 25px;
     }
 
-    .container-produtos {
+    /* .container-produtos {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -917,8 +917,19 @@ a {
         justify-content: flex-start;
         margin-left: 60px;
         height: auto;
+        overflow: auto;
+    } */
+    .container-produtos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 974px;
+        justify-content: flex-start;
+        margin-left: 60px;
+        overflow: auto;
+        margin-top: 5px;
     }
-
+    
     button {
         background-color: #FFF1F4;
         font-family: Poppins, sans-serif;
