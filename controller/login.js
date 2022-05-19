@@ -12,12 +12,13 @@ botaoLogin.addEventListener("click", async (event)=>{
         "password": senha
     }
     const response = await Api.autenticarUsuario(body);
-    console.log(response);
     
     if(response.error != '' && response.error != undefined) {
         spanMsgRetorno.innerText = response.error;
         
     } else {
+        window.localStorage.setItem('Token', response)
+        
         spanMsgRetorno.innerText = 'Login realizado com sucesso! Você será redirecionado para a página inicial.';
         setTimeout(() => {
             window.location.href = './pages/vitrine.html';

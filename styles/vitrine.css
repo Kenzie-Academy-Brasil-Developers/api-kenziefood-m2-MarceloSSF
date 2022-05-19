@@ -30,7 +30,6 @@ body{
 .cart--container {
     width: 20rem;
     height: 36.43rem;
-    /* margin-top: 0.93rem; */
     position: absolute;
     text-align: center;
     margin-left: 20px;
@@ -161,6 +160,26 @@ body{
     flex-wrap: wrap;
     align-content: space-between;
     margin-left: 15px;
+}
+
+.botoesExtras {
+    margin-top: 18px;
+    display: flex;
+}
+
+.cadastroItens, .logout {
+    background-color: #FFF1F4;
+    font-family: Poppins, sans-serif;
+    height: 50px;
+    width: 90px;
+    border-radius: 75px;
+    border-style: none;
+    font-size: 13px;
+}
+
+.cadastroItens:hover, .logout:hover {
+    cursor: pointer;
+    background-color: #f6b5c3;;
 }
 
 .logo-empresa{

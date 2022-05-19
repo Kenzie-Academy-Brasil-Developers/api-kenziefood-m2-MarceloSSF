@@ -2,8 +2,15 @@ import { Vitrine } from "../controller/VitrineController.js";
 import { Api } from "../controller/API.js";
 import { Filtros } from "../controller/filtrarProdutos.js";
 
+Vitrine.mostrarBotaoAdm();
 const inputBusca    = document.getElementById('pesquisar');
 import Carrinho from "./carrinho.js";
+
+const btnLogout        = document.getElementById('logout');
+const btnCadastroItens = document.getElementById('cadastroItens');
+
+btnLogout.addEventListener('click', Vitrine.logout)
+btnCadastroItens.addEventListener('click', function() {   window.location.href = './cadastroItens.html'   })
 
 const todos         = document.querySelector('.button-todos');
 const panificadora  = document.querySelector('.button-panificadora');
@@ -137,4 +144,5 @@ function activeDesactiveBebidas(){
         botaoPanificadora.classList.remove('active')
     }   
 }
+
 Carrinho.desktop()

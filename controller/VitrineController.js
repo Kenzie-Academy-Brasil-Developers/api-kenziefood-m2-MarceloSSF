@@ -52,4 +52,16 @@ export class Vitrine {
         return li;
     }
 
+
+    static logout() {
+        window.localStorage.setItem('Token', '');
+        window.location.href = '../index.html';
+    }
+
+    static mostrarBotaoAdm (){
+        const btnCadastroItens = document.getElementById('cadastroItens');
+        if(localStorage.getItem('Token') === '') {
+            btnCadastroItens.style.visibility = 'hidden';
+        }
+    }
 }
