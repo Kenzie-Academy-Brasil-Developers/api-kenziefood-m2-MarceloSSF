@@ -2,7 +2,7 @@ import { Vitrine } from "../controller/VitrineController.js";
 import { Api } from "../controller/API.js";
 import { Filtros } from "../controller/filtrarProdutos.js";
 
-
+const inputBusca    = document.getElementById('pesquisar');
 const todos         = document.querySelector('.button-todos');
 const panificadora  = document.querySelector('.button-panificadora');
 const frutas        = document.querySelector('.button-frutas');
