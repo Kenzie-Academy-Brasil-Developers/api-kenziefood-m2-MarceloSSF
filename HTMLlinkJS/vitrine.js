@@ -3,6 +3,8 @@ import { Api } from "../controller/API.js";
 import { Filtros } from "../controller/filtrarProdutos.js";
 
 const inputBusca    = document.getElementById('pesquisar');
+import Carrinho from "./carrinho.js";
+
 const todos         = document.querySelector('.button-todos');
 const panificadora  = document.querySelector('.button-panificadora');
 const frutas        = document.querySelector('.button-frutas');
@@ -135,3 +137,4 @@ function activeDesactiveBebidas(){
         botaoPanificadora.classList.remove('active')
     }   
 }
+Carrinho.desktop()

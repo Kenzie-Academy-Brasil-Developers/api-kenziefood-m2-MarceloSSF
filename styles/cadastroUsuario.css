@@ -144,6 +144,7 @@ input {
 button:hover {
     cursor: pointer;
     background-color: #a5a6a8;
+<<<<<<< HEAD
 }
 
 @media screen and (min-width: 360px){
@@ -284,4 +285,6 @@ button:hover {
     }
 
     
+=======
+>>>>>>> origin/carrinho-funcionando
 }

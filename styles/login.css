@@ -292,6 +292,10 @@ a {
         align-items: baseline;
         margin-bottom: -5vw;
         margin-top: 10vh;
+        
+        align-items: baseline;
+        margin-top: 10vh;
+        margin-bottom: -12vh;
     }
 
     h1 {
@@ -307,6 +311,8 @@ a {
         background-color: #FF2253;
         height: 64vh;
         width: 52vw;
+        height: 60vh;
+        width: 24vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -321,6 +327,8 @@ a {
     input {
         height: 4vw;
         width: 30vw;
+        height: 2vw;
+        width: 15vw;
         border: 1.5px solid #DEE2E6;
         border-radius: 12px;
         padding: 0.1vh 0.5vw 0vh 0.5vw;
@@ -339,6 +347,7 @@ a {
         margin-top: -24px;
         justify-content: center;
         margin-top: 10px;
+        width: 10vw;
     }
 }
 
@@ -443,8 +452,3 @@ button:hover {
     }
 
 }
-
-
-
-
-
