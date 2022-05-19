@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/vitrine.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Kenzie Food</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-empresa">
+            <h1>Kenzie</h1>
+            <p>Food</p>
+        </div>
+        <div class="pesquisar">
+            <img class="botao-pesquisar" src="./img/searchpesquisar.svg" id="botaoPesquisar" alt="Botão Pesquisar">
+            <input class="input-pesquisa" size="20" placeholder="Pesquisar por produto" type="text" name="pesquisar" id="pesquisar">
+        </div>
+    </header>
+    <nav id="tags" class="nav">
+        <ul class="container-tags">
+
+            <li id="tagTodos" class="tag-todos active">
+                <button class="button-todos active">Todos</button>
+            </li>
+
+            <li id="tagPanificadora" class="tag-panificadora">
+                <button class="button-panificadora"><img src="./img/Icon_breadpaoIcone.svg" alt="Panificadora">Panificadora</button>
+            </li>   
+
+            <li id="tagFrutas" class="tag-frutas">
+                <button class="button-frutas"><img src="./img/Icon_fruitsfrutasIcone.svg" alt="Frutas">Frutas</button>
+            </li>
+
+            <li id="tagBebidas" class="tag-bebidas">
+                <button class="button-bebidas"><img src="./img/Icon_glass of winevinhoIcone.svg" alt="Bebidas">Bebidas</button>
+            </li>
+
+        </ul>
+    </nav>
+    <main>
+        <!-- Produtos coletados dinamicamente -->
+        <section id="vitrine" class="vitrine">
+            <ul class="container-produtos">
+
+                <!-- <li id="produto" class="card-produto">
+                    <img class="img-produto" src="./img/Frame 5panquecessasdfa.svg" alt="Panquecas">
+                    <h2>Panqueca de banana com aveia </h2>
+                    <p class="descricao-produto">Esta receita serve muito bem 2 pessoas, deixa a gente bem satisfeito, se não tiver outra opção de café. Se tiver mais comida, como pães e frutas.</p>
+                    <div id="categorias" class="categoria-produto">
+                        <p>Panificadora</p>
+                        <p>Frutas</p>
+                    </div>
+                    <div class="valor-carrinho">
+                        <p class="simbolo-moeda">R$ <span class="valor-produto">20,00</span></p>
+                        <img id="adicionarCarrinho" src="./img/Button CirclebotaoCarrinho.svg" alt="Adicionar ao carrinho">
+                    </div>                    
+                </li>
+
+               <!- Fim dos produtos coletados dinamicamente -->
+
+            </ul>
+        
+                
+        </section>
+
+        <!-- Botao Carrinho de Compras -->
+
+        <!-- <button class="botao-carrinho-compras" id="botaoCarrinhoCompras"><img class='img-botao-carrinho'src="./img/carrinho.svg" alt="Carrinho de compras">Carrinho</button> -->
+        <div class="cart--button--mobile">
+            <img src="./img/cart.png" alt="">
+            <span>Carrinho</span>
+        </div>
+        <!-- Fim Botão Carrinho de compras -->
+        
+    </main>
+
+    <script type="module" src="../HTMLlinkJS/vitrine.js"></script>
+    <script type="module" src="../HTMLlinkJS/carrinho.js"></script>
+</body>
+</html>
