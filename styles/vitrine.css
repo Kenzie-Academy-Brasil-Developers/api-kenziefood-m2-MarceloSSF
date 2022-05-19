@@ -504,7 +504,7 @@ a {
         height: 37px;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-evenly;
     }
 
@@ -882,15 +882,13 @@ a {
     input {
         font-family: Poppins, sans-serif;
         background-color: #FFF7F4;
-        height: 40px;
+        height: 30px;
         width: 346px;
         border-radius: 75px;
         border-style: none;
         font-size: 15px;
         margin-top: 3px;
     }
-
-
 
     .logo-empresa h1 {
         font-family: 'Poppins';
