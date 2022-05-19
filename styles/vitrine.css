@@ -402,8 +402,9 @@ body{
 }
 
 #adicionarCarrinho{
+    background-color: transparent;
     border: none;
-    border-radius: 50%;
+    cursor: pointer;
 }
 
 .botao-carrinho-compras{
