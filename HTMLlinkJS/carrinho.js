@@ -14,7 +14,7 @@ class Carrinho {
                 divCartContainer.innerHTML = `   
                 <div class="header--modal">
                 <div class="text--modal">
-                <img src="/img/cart.png" alt="">
+                <img src="../pages/img/cart.png" alt="">
                 <span>Carrinho</span>
                 </div>
                 <button id="fechar--modal">X</button>
@@ -40,7 +40,7 @@ class Carrinho {
             divCartContainer.innerHTML = `
             <div class="header--modal">
                 <div class="text--modal">
-                    <img src="/img/cart.png" alt="">
+                    <img src="../pages/img/cart.png" alt="">
                     <span>Carrinho</span>
                 </div>
                 <button id="fechar--modal">X</button>
