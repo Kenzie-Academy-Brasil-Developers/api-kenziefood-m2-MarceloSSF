@@ -8,7 +8,6 @@ const section = document.getElementById('vitrine')
 class Carrinho {
 
     static criarModal () {
-        // if (arrayCarrinho === []) {
             if (Vitrine.arrayCarrinho.length === 0) {
                 section.appendChild(divCartContainer)
                 divCartContainer.innerHTML = `   
@@ -187,12 +186,7 @@ class Carrinho {
              }
         }
     }
-
-
 }
 
-
 abrirModalMobile[0].addEventListener('click', Carrinho.criarModal)
-
-
 export default Carrinho
