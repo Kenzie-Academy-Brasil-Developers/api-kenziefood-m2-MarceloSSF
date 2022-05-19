@@ -1,6 +1,8 @@
 import { Vitrine } from "../controller/VitrineController.js";
 import { Api } from "../controller/API.js";
 import { Filtros } from "../controller/filtrarProdutos.js";
+import Carrinho from "./carrinho.js";
+
 
 
 const todos         = document.querySelector('.button-todos');
@@ -43,3 +45,6 @@ bebidas.addEventListener('click', async () => {
     const listaFiltrada = await Filtros.filtro('Bebidas');
     criarVitrine(listaFiltrada);
 })
+
+Carrinho.desktop()
+Carrinho.teste()
