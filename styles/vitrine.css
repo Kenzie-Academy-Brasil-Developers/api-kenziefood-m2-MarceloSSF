@@ -1,6 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     color: #212529;
+    max-height: 300px;
 }
 
 .header{
@@ -8,8 +9,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
-    margin-left: 3vh;
-    margin-bottom: 1vw;
+    margin-left: 15px;
 }
 
 .logo-empresa{
@@ -131,8 +131,6 @@ body{
     text-align: center;
 }
 
-
-
 .vitrine{
     display: flex;
 }
@@ -141,19 +139,25 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-left: 5vw;
+    margin-left: 10px;
+    overflow: auto;
+    margin-top: 5px;
 }
 
 .img-produto{
     border: 3px solid #FFE9EE;
+    width: 300px;
+    height: 200px;
     border-radius: 8px;
+    margin-bottom: 5px;
 }
 
 .card-produto{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 130vw;
+    width: 303px;
+    height: 397px;
     margin-right: 23px;
 
 }
@@ -167,6 +171,7 @@ body{
     line-height: 27px;
     width: 266px;
     height: 27px;
+    margin-bottom: 5px;
 }
 
 .descricao-produto{
@@ -176,10 +181,17 @@ body{
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+    text-align: justify;
+    margin-bottom: 5px;
 }
 
 .categoria-produto{
     display: flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .categoria-produto p{
@@ -209,5 +221,269 @@ body{
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
+}
+
+#adicionarCarrinho{
+    border: none;
+    border-radius: 50%;
+}
+
+.botao-carrinho-compras{
+    background: #FF2253;
+    border-radius: 0px;
+    width: 360px;
+    height: 60px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17.1px;
+    line-height: 28px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-botao-carrinho{
+    margin-right: 15px;
+}
+
+@media screen and (min-width: 640px) {
+    .header {
+        display: flex;
+        margin-left: -19px;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 5px;
+    }
+
+    .logo-empresa {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
+
+    .logo-empresa p{
+        color: #FF2253;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16.2712px;
+        line-height: 24px;
+    }
+
+    .pesquisar{
+        border: 1.5px solid #E9ECEF;
+        border-radius: 12px;
+        background: #E9ECEF;
+        width: 300px;
+        height: 37px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .container-tags {
+        margin-top: -15px;
+    }
+
+    .vitrine{
+        margin-top: -15px;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -20px
+    }
+
+    .botao-carrinho-compras{
+        margin: auto;
+        height: 50px;
+    }
+
+    .container-produtos {
+        margin-bottom: 5px;
+        margin-left: 40px;
+    }
 
 }
+
+
+@media screen and (min-width: 1024px){
+
+    .header{
+        
+        display: flex;
+        justify-content: space-between;
+        margin-top: -5px;
+        margin-left: 15px;
+        margin-right: 15px;
+       
+    }
+    
+    .logo-empresa {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    .pesquisar {
+        margin-top: 18px;
+    }
+
+    .container-tags {
+        margin-top: -25px;
+        margin-bottom: 15px;
+    }
+
+    .container-produtos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 660px;
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    .botao-carrinho-compras{
+        display: none;
+    }
+
+    .card-produto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 303px;
+        height: 397px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .header{
+        
+        display: flex;
+        justify-content: space-between;
+        margin-top: -15px;
+        margin-left: 15px;
+        margin-right: 15px;
+       
+    }
+    
+    .logo-empresa {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    .pesquisar {
+        margin-top: 18px;
+    }
+
+    .container-tags {
+        margin-top: -15px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-produtos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 660px;
+        justify-content: flex-start;
+        margin-left: 60px;
+        height: 825px;
+    }
+
+    .botao-carrinho-compras{
+        height: 62px;
+        width: 540px;
+    }
+
+    .card-produto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 303px;
+        height: 397px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1280px){
+    
+    .header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+        margin-left: 15px;
+        margin-right: 60px;
+    }
+
+    .logo-empresa h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 21.6949px;
+        line-height: 33px;
+        margin-right: 1vw;
+    }
+
+    .container-tags {
+        margin-top: -15px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 25px;
+    }
+
+    .container-produtos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 974px;
+        justify-content: flex-start;
+        margin-left: 60px;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

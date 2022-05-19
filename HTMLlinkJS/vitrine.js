@@ -2,7 +2,7 @@ import { Vitrine } from "../controller/VitrineController.js";
 import { Api } from "../controller/API.js";
 import { Filtros } from "../controller/filtrarProdutos.js";
 
-
+const inputBusca    = document.getElementById('pesquisar');
 const todos         = document.querySelector('.button-todos');
 const panificadora  = document.querySelector('.button-panificadora');
 const frutas        = document.querySelector('.button-frutas');
@@ -43,3 +43,10 @@ bebidas.addEventListener('click', async () => {
     const listaFiltrada = await Filtros.filtro('Bebidas');
     criarVitrine(listaFiltrada);
 })
+
+inputBusca.addEventListener('input', async () => {
+    ul.innerHTML = '';
+    const inputValor = inputBusca.value;
+    const listaFiltrada = await Filtros.buscarProduto(inputValor);
+    criarVitrine(listaFiltrada);
+})   

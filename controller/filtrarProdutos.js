@@ -18,4 +18,23 @@ export class Filtros {
         return retorno;
     }
 
+    static async buscarProduto(input){
+        let retorno = [];
+        const todosProdutos = await Api.buscarProdutosAPI()
+
+        if(input === '') {
+
+            retorno = todosProdutos;
+
+        } else {
+
+            retorno = todosProdutos.filter(item => {
+                return item.nome.toLowerCase().indexOf(input.toLowerCase()) > -1
+            })
+        }
+
+        return retorno;
+        
+    }
+
 }
