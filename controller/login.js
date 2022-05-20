@@ -1,6 +1,7 @@
 import { Api } from "./API.js"
 
 const botaoLogin = document.getElementById("botao-login")
+window.localStorage.setItem('itensCarrinho', '');
 botaoLogin.addEventListener("click", async (event)=>{
     event.preventDefault()
     let email = document.getElementById('email').value;

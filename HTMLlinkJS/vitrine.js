@@ -3,10 +3,8 @@ import { Api } from "../controller/API.js";
 import { Filtros } from "../controller/filtrarProdutos.js";
 
 Vitrine.mostrarBotaoAdm();
-let itensLocalStorage;
-if(localStorage.getItem('itensCarrinho') != null) {
-    itensLocalStorage = localStorage.getItem('itensCarrinho')
-}
+const itensLocalStorage = localStorage.getItem('itensCarrinho')
+
 
 if(localStorage.getItem('itensCarrinho').length != 0) {
     Vitrine.arrayCarrinho = JSON.parse(itensLocalStorage)
