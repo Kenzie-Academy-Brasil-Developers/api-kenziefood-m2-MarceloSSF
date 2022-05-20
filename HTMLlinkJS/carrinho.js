@@ -3,7 +3,6 @@ import { Vitrine } from "../controller/VitrineController.js";
 const abrirModalMobile = document.getElementsByClassName('cart--button--mobile')
 const divCartContainer = document.createElement('div')
 const cartContainer = divCartContainer.classList.add('cart--container')
-const teste = divCartContainer.classList.add('teste')
 const section = document.getElementById('vitrine')
 class Carrinho {
 
@@ -31,8 +30,6 @@ class Carrinho {
                     section.removeChild(divCartContainer)
                 })
             }
-    
-        //}
         else {
             const somaProdutos = Vitrine.arrayCarrinho.reduce((acc, elem) => acc + elem.preco, 0 )
             section.appendChild(divCartContainer)
@@ -96,6 +93,7 @@ class Carrinho {
     
                 imgLixo.addEventListener('click', () => {
                     Vitrine.arrayCarrinho.splice(elem, 1)
+                    localStorage.setItem('itensCarrinho', JSON.stringify(Vitrine.arrayCarrinho))
                     Carrinho.criarModal()
                 })
             })
@@ -179,7 +177,8 @@ class Carrinho {
                 ul[0].appendChild(li)
     
                 imgLixo.addEventListener('click', () => {
-                    Vitrine.arrayCarrinho.splice(elem, 1)
+                    Vitrine.arrayCarrinho.splice(elem, 1);
+                    localStorage.setItem('itensCarrinho', JSON.stringify(Vitrine.arrayCarrinho))
                     Carrinho.desktop()
                 })
                 })

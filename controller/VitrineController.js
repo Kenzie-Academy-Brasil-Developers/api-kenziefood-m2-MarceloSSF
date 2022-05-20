@@ -44,18 +44,17 @@ export class Vitrine {
         li.append(imgProduto, h2, descricao, categorias, valorCarrinho);
         
         buttonAddCarrinho.addEventListener('click', () => {
-            this.arrayCarrinho.push(item)
-            console.log(this.arrayCarrinho)
-            localStorage.setItem('itensCarrinho', JSON.stringify(this.arrayCarrinho))
+            Vitrine.arrayCarrinho.push(item)
+            localStorage.setItem('itensCarrinho', JSON.stringify(Vitrine.arrayCarrinho))
             Carrinho.desktop()
         })
         return li;
     }
 
-
     static logout() {
         window.localStorage.setItem('Token', '');
         window.location.href = '../index.html';
+        window.localStorage.setItem('itensCarrinho', '');
     }
 
     static mostrarBotaoAdm (){

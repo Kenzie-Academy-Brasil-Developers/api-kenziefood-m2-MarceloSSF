@@ -3,9 +3,14 @@ import { Api } from "../controller/API.js";
 import { Filtros } from "../controller/filtrarProdutos.js";
 
 Vitrine.mostrarBotaoAdm();
+const itensLocalStorage = localStorage.getItem('itensCarrinho')
+if(localStorage.getItem('itensCarrinho').length != 0) {
+    Vitrine.arrayCarrinho = JSON.parse(itensLocalStorage)
+    Carrinho.desktop();
+}
+
 const inputBusca    = document.getElementById('pesquisar');
 import Carrinho from "./carrinho.js";
-
 const btnLogout        = document.getElementById('logout');
 const btnCadastroItens = document.getElementById('cadastroItens');
 
